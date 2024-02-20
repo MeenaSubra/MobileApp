@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- First Name -->
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameLabel"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter First Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <View
+        android:id="@+id/firstNameUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/firstNameEditText"
+        android:background="@android:color/black"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Last Name -->
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameUnderline"
+        android:text="Last Name:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameLabel"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:hint="Enter Last Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <View
+        android:id="@+id/lastNameUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lastNameEditText"
+        android:background="@android:color/black"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Visit Type -->
+    <TextView
+        android:id="@+id/visitTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameUnderline"
+        android:text="Visit Type:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/visitTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visitTypeLabel">
+
+        <RadioButton
+            android:id="@+id/businessRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business" />
+
+        <RadioButton
+            android:id="@+id/socialRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social" />
+    </RadioGroup>
+
+    <!-- Country -->
+    <TextView
+        android:id="@+id/countryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visitTypeRadioGroup"
+        android:text="Country:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryLabel"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp" />
+
+    <!-- Continue and Cancel Buttons -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countrySpinner"
+        android:text="Continue"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countrySpinner"
+        android:text="Cancel"
+        android:layout_marginTop="24dp"
+        android:layout_toStartOf="@+id/continueButton"
+        android:layout_toLeftOf="@+id/continueButton"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        android:layout_marginRight="8dp"/>
+
+</RelativeLayout>

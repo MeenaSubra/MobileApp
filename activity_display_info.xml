@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DisplayInfoActivity">
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFirstName"
+        android:layout_marginTop="16dp"
+        android:text="Last Name:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewVisitType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLastName"
+        android:layout_marginTop="16dp"
+        android:text="Visit Type:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVisitType"
+        android:layout_marginTop="16dp"
+        android:text="Country:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFirstNameValue"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFirstName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewLastNameValue"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLastName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/textViewVisitTypeValue"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVisitType"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCountryValue"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCountry"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-28dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</RelativeLayout>
